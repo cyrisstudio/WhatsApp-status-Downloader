@@ -50,7 +50,7 @@ public class LoadVideo extends AppCompatActivity {
         playerView = findViewById(R.id.playerInVideo);
         shareVideo = findViewById(R.id.shareVideoInPlayer);
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-9531546526616195/3902940317");
+        mInterstitialAd.setAdUnitId("");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
         player = ExoPlayerFactory.newSimpleInstance(this, new DefaultTrackSelector());
         for(int i=0;i<video2.size();i++)
