@@ -43,7 +43,7 @@ public class imageAdapter extends RecyclerView.Adapter<imageAdapter.ImageViewHol
             imageSoureList = GetFile.setImageSource();
         notifyDataSetChanged();
                 mInterstitialAd = new InterstitialAd(context);
-                mInterstitialAd.setAdUnitId("ca-app-pub-9531546526616195/2809156975");
+                mInterstitialAd.setAdUnitId("");
                 mInterstitialAd.loadAd(new AdRequest.Builder().build());
 
     }
@@ -117,7 +117,7 @@ public class imageAdapter extends RecyclerView.Adapter<imageAdapter.ImageViewHol
                         {
                             mInterstitialAd.show();
                             mInterstitialAd = new InterstitialAd(context);
-                            mInterstitialAd.setAdUnitId("ca-app-pub-9531546526616195/2809156975");
+                            mInterstitialAd.setAdUnitId("");
                             mInterstitialAd.loadAd(new AdRequest.Builder().build());
                             notifyDataSetChanged();
                         }
