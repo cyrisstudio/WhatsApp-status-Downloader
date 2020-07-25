@@ -40,7 +40,7 @@ public class videoAdapter extends RecyclerView.Adapter<videoAdapter.VideoViewHol
             videoList = GetFile.setVideoSource();
         notifyDataSetChanged();
         mInterstitialAd = new InterstitialAd(context);
-        mInterstitialAd.setAdUnitId("ca-app-pub-9531546526616195/2126824216");
+        mInterstitialAd.setAdUnitId("");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
     }
     @NonNull
@@ -113,7 +113,7 @@ public class videoAdapter extends RecyclerView.Adapter<videoAdapter.VideoViewHol
                         {
                             mInterstitialAd.show();
                             mInterstitialAd = new InterstitialAd(context);
-                            mInterstitialAd.setAdUnitId("ca-app-pub-9531546526616195/2126824216");
+                            mInterstitialAd.setAdUnitId("");
                             mInterstitialAd.loadAd(new AdRequest.Builder().build());
                             notifyDataSetChanged();
                         }
