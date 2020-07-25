@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity  {
                     intent.setPackage("com.whatsapp");
                     if(intent.resolveActivity(getPackageManager())!=null)
                     {
-                        intent.putExtra(Intent.EXTRA_TEXT,"Hey, Check this app to Download whatsapp status image/video in gallery with status downloader app download it:-\n\nhttps://play.google.com/store/apps/details?id=com.cyris.whatsappstatudownload");
+                        intent.putExtra(Intent.EXTRA_TEXT,"Hey, Check this app to Download whatsapp status image/video in gallery with status downloader app download it:-\n\n{our url}");
                         startActivity(intent);
                     }
                     else
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity  {
                 {
 
                    // Toast.makeText(MainActivity.this,"I will work Later",Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.cyris.whatsappstatudownload")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("{our url}")));
                     drawer.closeDrawer(Gravity.LEFT);
 
                 }
@@ -130,7 +130,7 @@ public class MainActivity extends AppCompatActivity  {
                 {
 
                     //Toast.makeText(MainActivity.this,"I will work Later",Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://cyrisstudio.blogspot.com/p/privacy-policy-cyris-studio-built.html")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("{our url}")));
                     drawer.closeDrawer(Gravity.LEFT);
 
                 }
@@ -138,7 +138,7 @@ public class MainActivity extends AppCompatActivity  {
                 if(menuItem.getItemId() == R.id.contctUsInDrawer)
                 {
 
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://cyrisstudio.blogspot.com/p/contact-us.html")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("{our url}")));
                     // Toast.makeText(MainActivity.this,"I will work Later",Toast.LENGTH_SHORT).show();
                     drawer.closeDrawer(Gravity.LEFT);
 
@@ -147,23 +147,20 @@ public class MainActivity extends AppCompatActivity  {
                 {
 
                     //Toast.makeText(MainActivity.this,"I will work Later",Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/developer?id=Cyris+Studio")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("{our url}")));
                     drawer.closeDrawer(Gravity.LEFT);
 
                 }
                 return true;
             }
         });
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+        
        mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home)
                 .setDrawerLayout(drawer)
                 .build();
 
-      //  NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-     //   NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
-      //  NavigationUI.setupWithNavController(navigationView, navController);
+    
 
         if (android.os.Build.VERSION.SDK_INT >= 21) {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
@@ -185,10 +182,6 @@ public class MainActivity extends AppCompatActivity  {
 
 
         }
-        //setViewPager();
-
-      //  tabLayout.setupWithViewPager(mainViewPager);
-      //  tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
 
     }
 
@@ -212,7 +205,7 @@ public class MainActivity extends AppCompatActivity  {
                 intent.setPackage("com.whatsapp");
                 if(intent.resolveActivity(getPackageManager())!=null)
                 {
-                    intent.putExtra(Intent.EXTRA_TEXT,"Hey, Check this app to Download whatsapp status image/video in gallery with status downloader app download it:-\n\nhttps://play.google.com/store/apps/details?id=com.cyris.whatsappstatudownload");
+                    intent.putExtra(Intent.EXTRA_TEXT,"Hey, Check this app to Download whatsapp status image/video in gallery with status downloader app download it:-\n\n{our url}");
                     startActivity(intent);
                 }
                 else
