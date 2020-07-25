@@ -38,7 +38,7 @@ public class LoadImage extends AppCompatActivity {
         uri = getIntent().getStringArrayListExtra("imageIntent");
         position = getIntent().getIntExtra("position",0);
         mInterstitialAd = new InterstitialAd(this);
-        mInterstitialAd.setAdUnitId("ca-app-pub-9531546526616195/5407593676");
+        mInterstitialAd.setAdUnitId("");
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
 
         Uri uri1 = Uri.parse(uri.get(position));
